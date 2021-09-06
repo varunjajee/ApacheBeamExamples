@@ -1,0 +1,29 @@
+
+https://beam.apache.org/get-started/quickstart-java/
+
+
+// Prerequsite create service account and key.
+https://cloud.google.com/dataflow/docs/quickstarts/quickstart-java-maven
+
+
+1. Direct Runner
+run command from command Line. (word count)
+mvn compile exec:java -D exec.mainClass=org.apache.beam.examples.WordCount -D exec.args="--inputFile=/SampleData/people.txt --output=counts=/OutPut/" -P direct-runner
+
+2. DataFlow runner
+(Maven commands http://tutorials.jenkov.com/maven/maven-commands.html)
+(Ignore test fail while creating jar https://stackoverflow.com/questions/3365553/how-to-build-a-jar-using-maven-ignoring-test-results)
+
+Complie and execute:- mvn compile exec:java -D exec.mainClass=org.apache.beam.examples.WordCount -D exec.args="--runner=DataflowRunner --project=may2021-312808 --region=us-east1-b --gcpTempLocation=gs://gcp_staging/temp/ --inputFile=gs://gcp_beam_input/wordCountSample.txt --output=gs://gcp_beam_input/counts" -P dataflow-runner
+Compile :-  mvn compile -D exec.mainClass=org.apache.beam.examples.WordCount -D exec.args="--runner=DataflowRunner --project=may2021-312808 --region=us-east1-b --gcpTempLocation=gs://gcp_staging/temp/ --inputFile=gs://gcp_beam_input/wordCountSample.txt --output=gs://gcp_beam_input/counts" -P dataflow-runner
+mvn package
+mvn package -D exec.mainClass=org.apache.beam.examples.WordCount -D exec.args="--runner=DataflowRunner --project=may2021-312808 --region=us-east1-b --gcpTempLocation=gs://gcp_staging/temp/ --inputFile=gs://gcp_beam_input/wordCountSample.txt --output=gs://gcp_beam_input/counts" -P dataflow-runner
+mvn clean
+
+
+
+
+
+
+
+gsutil cat gs://gcp_staging/counts

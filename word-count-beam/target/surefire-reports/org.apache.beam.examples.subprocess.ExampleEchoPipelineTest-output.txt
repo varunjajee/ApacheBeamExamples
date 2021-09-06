@@ -1,0 +1,1060 @@
+May 12, 2021 9:59:39 AM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils initSemaphore
+INFO: Initialized Semaphore for binary test-Echo2911294525614995893.sh 
+May 12, 2021 9:59:39 AM org.apache.beam.examples.subprocess.utils.CallingSubProcessUtils setUp
+INFO: Calling filesetup to move Executables to worker.
+May 12, 2021 9:59:39 AM org.apache.beam.examples.subprocess.utils.FileUtils copyFileFromGCSToWorker
+INFO: Moving File C:\Users\vjajee\AppData\Local\Temp\test-Echo2911294525614995893.sh to C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh 
+May 12, 2021 9:59:39 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\616dfc33-10b6-4d15-a871-767927537c02.res,18 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:39 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\ef62caeb-a198-40be-a654-0e6eee869c74.res,96 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\45ab407c-3474-40fd-b032-d12172367dc6.res,66 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\82122a44-6ecc-4ae9-8b18-bb63254f60bf.res,42 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\ccd1d56e-9bca-46eb-ad1b-220be42bcddf.res,72 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\78c37329-581e-4189-b605-7ef005c6c99b.res,48 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\9e388c16-c82d-4d83-a3b5-e958c2a18896.res,30 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\2da8b293-03ba-4805-a1f3-bc84c64df5d4.res,90 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:40 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\aff1f865-c079-41b1-bd17-a10870dc0025.res,24 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\775d0c23-04af-4be6-95ca-a489903c9177.res,60 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\f131740d-6212-45eb-855f-cf042bfbf01f.res,0 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\c3b09c22-a078-4691-8388-8ce9d74d8461.res,84 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\afa49972-11e8-4775-8c6e-969b0b74bc1e.res,12 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:41 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\5743cdc3-4b05-4d24-b56a-438c974d0fd7.res,36 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\b7d5e82c-a78e-43a3-a6a8-ae34e8e3c551.res,54 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\d5e02684-bffa-4321-b6dc-4b5e86eda52f.res,78 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel execBinary
+SEVERE: Error running process with parameters C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh,C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\7b054597-4ce0-4cc6-9b27-f73577673c03.res,6 error was Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application 
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.kernel.SubProcessKernel exec
+SEVERE: Error running executable 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+
+May 12, 2021 9:59:42 AM org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn processElement
+SEVERE: Error processing element 
+java.lang.Exception: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:173)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.exec(SubProcessKernel.java:71)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn.processElement(ExampleEchoPipelineTest.java:160)
+	at org.apache.beam.examples.subprocess.ExampleEchoPipelineTest$EchoInputDoFn$DoFnInvoker.invokeProcessElement(Unknown Source)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.invokeProcessElement(SimpleDoFnRunner.java:232)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimpleDoFnRunner.processElement(SimpleDoFnRunner.java:191)
+	at org.apache.beam.repackaged.direct_java.runners.core.SimplePushbackSideInputDoFnRunner.processElementInReadyWindows(SimplePushbackSideInputDoFnRunner.java:79)
+	at org.apache.beam.runners.direct.ParDoEvaluator.processElement(ParDoEvaluator.java:244)
+	at org.apache.beam.runners.direct.DoFnLifecycleManagerRemovingTransformEvaluator.processElement(DoFnLifecycleManagerRemovingTransformEvaluator.java:54)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.processElements(DirectTransformExecutor.java:165)
+	at org.apache.beam.runners.direct.DirectTransformExecutor.run(DirectTransformExecutor.java:129)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "C:\Users\vjajee\AppData\Local\Temp\test-Echoo2738827179910398233\test-Echo2911294525614995893.sh": CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.beam.examples.subprocess.kernel.SubProcessKernel.execBinary(SubProcessKernel.java:153)
+	... 15 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 16 more
+

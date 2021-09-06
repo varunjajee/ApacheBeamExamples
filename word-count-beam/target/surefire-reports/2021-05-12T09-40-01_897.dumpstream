@@ -1,0 +1,4 @@
+# Created at 2021-05-12T09:40:02.698
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Technology\Code\ApacheBeam\word-count-beam\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

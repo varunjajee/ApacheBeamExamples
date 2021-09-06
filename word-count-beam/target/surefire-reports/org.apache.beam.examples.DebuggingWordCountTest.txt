@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.beam.examples.DebuggingWordCountTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.13 s <<< FAILURE! - in org.apache.beam.examples.DebuggingWordCountTest
+org.apache.beam.examples.DebuggingWordCountTest.testDebuggingWordCount  Time elapsed: 6.13 s  <<< ERROR!
+org.apache.beam.sdk.Pipeline$PipelineExecutionException: java.io.FileNotFoundException: No files matched spec: /Users/vjajee/AppData/Local/Temp/junit2257764359964240996/junit8657440120273935488.tmp
+	at org.apache.beam.examples.DebuggingWordCountTest.testDebuggingWordCount(DebuggingWordCountTest.java:54)
+Caused by: java.io.FileNotFoundException: No files matched spec: /Users/vjajee/AppData/Local/Temp/junit2257764359964240996/junit8657440120273935488.tmp
+
